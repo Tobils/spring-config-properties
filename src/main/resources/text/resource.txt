@@ -1,0 +1,1 @@
+ini merupakan file untuk implementasi resource loader
