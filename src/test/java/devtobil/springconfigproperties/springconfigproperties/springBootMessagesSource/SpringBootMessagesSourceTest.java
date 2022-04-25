@@ -26,7 +26,7 @@ public class SpringBootMessagesSourceTest {
   @Test
   public void testHello() {
     log.info(sampleResource.helloTobil(Locale.ENGLISH));
-    log.info(sampleResource.helloTobil(new Locale("in_ID")));
+    log.info(sampleResource.helloTobil(new Locale("_in_ID")));
     Assertions.assertEquals("Hello Tobil", sampleResource.helloTobil(Locale.ENGLISH));
     Assertions.assertEquals("Halo Tobil", sampleResource.helloTobil(new Locale("in_ID")));
   }

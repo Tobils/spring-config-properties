@@ -36,3 +36,21 @@
 - bisa menggunakan MessageSourceAware
 - ApplicationContext adalah turunan dari MessageSource
 ```
+
+## Application Properties
+
+```
+- saat membuat project spring, secara otomatis akan dibuatkan file application.properties
+- file ini merupakan ppusat dari properties dari konfigurasi aplikasi spring
+- secara otomatis spring boot akan membaca application.properties
+- file ini digunakan untuk konfigurasi
+- jika kita butuh Internationalization, gunakan file messages.properties
+
+```
+
+## Environtment
+
+```
+- dapat digunakan untuk mengambil value envi variable dari sistem operasi
+- kita bisa menggunakan EnvirontmentAware jika ingin mendapatkan object Environment
+```
