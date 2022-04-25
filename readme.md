@@ -27,3 +27,12 @@
   - kombinasi message properties dan message format
   - merupakan interface dan perlu implementasi class, dan sudah disediakan oleh spring
 ```
+
+## Spring Message Source
+
+```
+- jika kita menggunakan Spring Boot, maka Spring Boot secara otomatis telah membuat Message Source
+- secara otomatis Spring Boot akan mengambil data resourceZ bundle messages.properties
+- bisa menggunakan MessageSourceAware
+- ApplicationContext adalah turunan dari MessageSource
+```
