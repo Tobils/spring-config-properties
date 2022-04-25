@@ -18,3 +18,12 @@
 --- implementasi dengan ResourceLoaderAware
   - ResourceLoader adalah interface, sehingga untuk implementasi harus menggunakan class implementasinya dari ApplicationContext
 ```
+
+## Message Source
+
+```
+- mengambil data Properties secara otomatis
+- message source digunakan untuk mengabil source dari spring
+  - kombinasi message properties dan message format
+  - merupakan interface dan perlu implementasi class, dan sudah disediakan oleh spring
+```

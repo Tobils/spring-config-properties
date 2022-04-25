@@ -14,7 +14,7 @@ public class ResourceTest {
   public void testResource() throws IOException {
     var resource = new ClassPathResource("/text/sample.txt");
 
-    System.out.println(resource);
+    System.out.println(resource.getFile());
 
     Assertions.assertNotNull(resource);
     Assertions.assertTrue(resource.exists());
