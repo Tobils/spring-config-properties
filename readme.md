@@ -54,3 +54,13 @@
 - dapat digunakan untuk mengambil value envi variable dari sistem operasi
 - kita bisa menggunakan EnvirontmentAware jika ingin mendapatkan object Environment
 ```
+
+## Value
+
+```
+- Value merupakan Annotation yang dapat kita gunakan untuk melakukan inject data dari properties ke field yang kita tandai
+- cara nya dengan ${nama.properties.nya}, contoh: @Value("${application.name}")
+- atau dengan ${nama.envivar}, contoh : @Value("${JAVA_HOME}")
+
+-- check class ValuePropertiesTest
+```
