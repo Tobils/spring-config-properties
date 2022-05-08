@@ -64,3 +64,21 @@
 
 -- check class ValuePropertiesTest
 ```
+
+## Property Source
+
+```
+- secara default aplikasi hanya mmembaca application.properties
+- Springboot supported untuk menambahkan properties dengan Property Source
+- bisa menggunakan annotasi PropertySources
+- misal tambahkan file pada folder resources sample.properties
+- antar properties file tidak boleh terdapat key yg sama
+```
+
+## Test Property Source
+
+```
+- saat memmbuuat unit test terkadang kita perlu menggunakan properties file yang berbeda
+- akan sulit jika hanya menggunakan Annotation PropertySource
+- untungnya di spring boot support untuk  dengan Annotation TestPropertySOurce
+```
