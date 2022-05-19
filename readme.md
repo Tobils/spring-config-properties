@@ -82,3 +82,18 @@
 - akan sulit jika hanya menggunakan Annotation PropertySource
 - untungnya di spring boot support untuk  dengan Annotation TestPropertySOurce
 ```
+
+## Profile
+
+```
+- profile merupakan fitur di spring yg bisa digunakan untuk menenetukan component jalan di profile mana
+- profile cocok sekali ketika kta butuh component berbeda pada kondisi tertentu, misal kita buat component untuk koneksi ke memory db dan kita ingin component nya diganti ke koneksi memory aplikasi untuk local.
+- untuk menandai sebuah component dengan informasi Profile, kita bisa menggunakan annotation profile
+- kita bisa menggunakan application properties untuk enentukan profile mana yg active dengan key spring.profiles.active => spring.profiles.active=local,dev
+- jika tidak mengactive kan profiles nya maka akan secara default mmenggunakan profile default
+- kadang jika harus engubah profile di application properties akan menyulitkan ketika kita membuat unit test untuk beberapa profile
+- untuk mengubah profile di unit test, kita bisa menggunakan annotation ActiveProfiles
+- kadang kita ingin mendapatkan profile pada saat aplikasi berjalan
+- jika kasus seperti ini, kita bisa menggunakan Environment
+- terdapat method getActiveProfiles() untuk mendapatkan profile yg sedang aktif
+```
