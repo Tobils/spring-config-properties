@@ -97,3 +97,13 @@
 - jika kasus seperti ini, kita bisa menggunakan Environment
 - terdapat method getActiveProfiles() untuk mendapatkan profile yg sedang aktif
 ```
+
+## Profile Properties File
+
+```
+- saat enggunakan fitur profile, kita juga bisa embuat file properties sesuai dengan profile yang aktif
+- penamaan properties file adalah application-{profile}.properties
+- misal jika profile nya adalah dev maka application-dev.properties akan di load
+- jika lebih dari satu aka semua files properties akan di load
+- jangan lupa untuk application.properties akan di load di semua profile
+```
