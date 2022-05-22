@@ -107,3 +107,49 @@
 - jika lebih dari satu aka semua files properties akan di load
 - jangan lupa untuk application.properties akan di load di semua profile
 ```
+
+## Configuration PRoperties
+
+```
+- fitur ini digunakan untuk melakukan binding secara otomatis key yang ada di application properties ke java bean property secara otomatis
+- namun untuk menggunakan fitur ini, kita perlu mmenabahkan dependency yang dibutuhkan yaitu spring-boot-configuration-processor
+- mvn compile untuk mendapatkan file application config metadata, check output pada folder target/META-INF
+```
+
+-- output mvn compile
+
+```json
+{
+  "groups": [
+    {
+      "name": "application",
+      "type": "devtobil.springconfigproperties.springconfigproperties.properties.ApplicationProperties",
+      "sourceType": "devtobil.springconfigproperties.springconfigproperties.properties.ApplicationProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "application.name",
+      "type": "java.lang.String",
+      "sourceType": "devtobil.springconfigproperties.springconfigproperties.properties.ApplicationProperties"
+    },
+    {
+      "name": "application.production-mode",
+      "type": "java.lang.Boolean",
+      "sourceType": "devtobil.springconfigproperties.springconfigproperties.properties.ApplicationProperties"
+    },
+    {
+      "name": "application.version",
+      "type": "java.lang.Integer",
+      "sourceType": "devtobil.springconfigproperties.springconfigproperties.properties.ApplicationProperties"
+    }
+  ],
+  "hints": []
+}
+```
+
+--- Enable Configuration Properties
+
+```
+- kita perlu mgnggunakan annotation EnableConfigurationProperties untuk class yang ingin kita binding
+```
